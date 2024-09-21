@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Perdida na floresta</title>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0"> 
+            <img src="img/cenario-passo0.png" alt="">
+            <p>Você desperta, deitado no chão úmido de uma floresta desconhecida. O ar é fresco, mas o ambiente ao seu redor é silencioso, exceto pelo som distante de água corrente. As copas das árvores são densas, mal permitindo que a luz do sol toque o solo. Você não tem ideia de como chegou ali, mas a primeira coisa que precisa fazer é decidir como agir.</p>
+            <button class="btn-proximo" data-proximo="1">Explorar a floresta</button>
+            <button class="btn-proximo" data-proximo="2">Ficar no lugar</button>
+        </div>
+        <div class="passo" id="passo-1">
+            <p>Você começa a caminhar pela floresta, atento ao caminho. O som da água fica cada vez mais próximo, e você logo chega à beira de um rio de correnteza forte. A água cristalina corre veloz sobre as pedras, e à distância, você vê uma ponte de madeira quebrada, mal sustentada por alguns pilares.</p>
+            <button class="btn-proximo" data-proximo="3">Tentar atravessar o rio</button>
+            <button class="btn-proximo" data-proximo="4">Seguir a margem do rio</button>
+        </div>
+        <div class="passo" id="passo-2">
+            <p>Enquanto você permanece imóvel, tentando entender a situação, o som de passos se aproxima. Ramas quebram sob pés pesados, mas você não consegue ver quem ou o que está vindo</p>
+            <button class="btn-proximo" data-proximo="5">Se esconder</button>
+            <button class="btn-proximo" data-proximo="6">Ficar e ver quem é</button>
+        </div>
+        <div class="passo" id="passo-3">
+            <img src="img/cenario-corrente.png" alt="imagem corrente">
+            <p>Você decide se aventurar pela ponte quebrada, apesar do perigo evidente. Com cuidado, começa a atravessá-la, mas, subitamente, a madeira cede sob seus pés. Antes que possa reagir, você é arrastado pela correnteza impiedosa do rio, que o leva para longe, até que tudo se apaga.</p>
+            <button class="btn-proximo" data-proximo="7">Fim, voltar a etapa anterior</button>
+        </div>
+
+        <div class="passo" id="passo-4">
+            <p>Você começa a caminhar pela floresta, atento ao caminho. O som da água fica cada vez mais próximo, e você logo chega à beira de um rio de correnteza forte. A água cristalina corre veloz sobre as pedras, e à distância, você vê uma ponte de madeira quebrada, mal sustentada por alguns pilares.</p>
+            <button class="btn-proximo" data-proximo="7">Fim, voltar a etapa anterior</button>
+        </div>
+
+        <div class="passo" id="passo-5">
+            <p>Você segue o curso do rio, caminhando ao longo de sua margem. Após algum tempo, você encontra uma pequena vila. O lugar parece pacífico, com moradores indo e vindo, realizando suas tarefas diárias.</p>
+            <button class="btn-proximo" data-proximo="7">Entrar na vila</button>
+        </div>
+
+        <div class="passo" id="passo-6">
+            <p>Você se esconde atrás de um grande tronco caído, observando de perto o que está por vir. Um grupo de aventureiros emerge das árvores, conversando em voz baixa e carregando armas e sacolas cheias de equipamentos. Eles parecem estar em uma missão importante.</p>
+            <button class="btn-proximo" data-proximo="8">Segui-los</button>
+        </div>
+
+        <div class="passo" id="passo-7">
+            <p>Você decide enfrentar o desconhecido e espera enquanto os passos se aproximam. Das sombras surge um homem robusto, com uma pele curtida pelo sol e um arco nas costas. Ele parece ser um caçador local, com roupas simples e uma expressão amigável.</p>
+            <button class="btn-proximo" data-proximo="8">Pedir ajuda</button>
+        </div>
+
+        <div class="passo" id="passo-8">
+            <p>Os moradores da vila o recebem calorosamente. Eles parecem felizes em ver um novo rosto e oferecem abrigo, comida e descanso. A vila é pacata, e você sente que pode finalmente relaxar e se recuperar da aventura inesperada.</p>
+            <button class="btn-proximo" data-proximo="7">Fim: Aventura termina.</button>
+        </div>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
